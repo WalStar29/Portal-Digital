@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Main from "../layouts/Main.astro";
+import Footer from "../layouts/Footer.astro";
+import Nav from "../layouts/Nav.astro";
+import SignIn from "../components/SignIn.astro";
+import SignUp from "../components/SignUp.astro";
+---
+
+<Layout title="Investigadores">
+    <Main>
+        <Nav text="Home" text2="Galeria" text3="Proyectos" text4="Ambiente"></Nav>
+        
+            <SignUp></SignUp>
+            <SignIn></SignIn>
+            
+        <Footer></Footer>
+    </Main>
+</Layout>
+
+<style>
+
+</style>

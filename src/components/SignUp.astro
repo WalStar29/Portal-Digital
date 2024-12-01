@@ -1,0 +1,109 @@
+---
+import H1 from "../components/Titulos.astro"
+---
+
+<div class="SignUp">
+    <div class="titulo">
+        <H1 title='Solicitud de registro'></H1>
+    </div>
+
+        <form action="">
+            <div class="contenedor">
+                <div class="datos">
+                    <label for="">Ingrese su identidad: </label>
+                    <input type="text" placeholder="Escribe tu usuario" pattern="^[A-Za-z]+$" title="El campo sólo acepta letras" required>
+
+                    <label for="">Ingrese su nombre y apellido: </label>
+                    <input type="password" placeholder="Escribe tu password" required>
+
+                    <label for="">Ingrese su correo electronico: </label>
+                    <input type="email" placeholder="Escribe tu usuario" title="El campo sólo acepta letras" required>
+                    
+                    <label for="">Ingrese su telefono: </label>
+                    <input type="number" placeholder="Escribe tu usuario" title="El campo sólo acepta letras" required>
+                </div>
+
+                <div class="comentario">
+                    <textarea name="comentarios" required></textarea>
+                </div>
+            </div>
+
+            <div class="botones">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+</div>
+
+<style>
+    .SignUp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 5% 0;
+    }
+
+    .SignUp form{
+        transition: all 900ms;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 2% 0 0 0;
+        padding: 2% 0;
+    }
+
+    .SignUp form:hover{
+		border-radius: 50px;
+		background-color: rgb(255, 246, 224, 0.8);
+		box-shadow: 0px 10px 60px 0px rgb(0, 0, 0);
+		transition: all 900ms;
+	}
+
+    .SignUp form .contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .SignUp form .contenedor .datos{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SignUp form .contenedor .datos input{
+        margin: 2% 0 5% 0;
+        padding: 2%;
+        border-radius: 5px;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+    .SignUp form .contenedor .comentario{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SignUp form .contenedor .comentario textarea{
+        border-radius: 10px;
+        padding: 2% 2% 10% 2%;
+        width: 100%;
+        height: auto;
+        resize: none;
+    }
+
+    .SignUp form .botones{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .SignUp form .botones input{
+        padding: 1% 4%;
+        border-radius: 5px;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+</style>

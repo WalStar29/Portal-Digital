@@ -1,0 +1,110 @@
+---
+import H1 from "../components/Titulos.astro"
+import Botones from "../components/Botones.astro"
+---
+
+<div class="modificacion">
+    <div class="titulo">
+        <H1 title='Modificar Informacion'></H1>
+    </div>
+
+        <form action="">
+            <div class="contenedor">
+                <div class="datos">
+                    <label for="">Id: </label>
+                    <input type="text">
+
+                    <label for="">titulo: </label>
+                    <input type="text" placeholder="Escribe tu password" required>
+
+                    <label for="">Selecione una Imagen: </label>
+                    <input type="file">
+                </div>
+
+                <div class="comentario">
+                    <textarea name="comentarios" required></textarea>
+                </div>
+            </div>
+
+            
+            <Botones 
+                text="Guardar" 
+                text2="Regresar" 
+                text3="/investigador">
+            </Botones>
+            
+        </form>
+</div>
+
+<style>
+    .modificacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 5% 0;
+    }
+
+    .modificacion form{
+        transition: all 900ms;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 2% 0 0 0;
+        padding: 2% 0;
+    }
+
+    .modificacion form:hover{
+		border-radius: 50px;
+		background-color: rgb(124, 245, 255, 0.8);
+		box-shadow: 0px 10px 60px 0px rgb(124, 245, 255);
+		transition: all 900ms;
+	}
+
+    .modificacion form .contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .modificacion form .contenedor .datos{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modificacion form .contenedor .datos input{
+        margin: 2% 0 5% 0;
+        padding: 2%;
+        border-radius: 5px;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+    .modificacion form .contenedor .comentario{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modificacion form .contenedor .comentario textarea{
+        border-radius: 10px;
+        padding: 2% 2% 10% 2%;
+        width: 100%;
+        height: auto;
+        resize: none;
+    }
+
+    .modificacion form .botones{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .modificacion form .botones input{
+        padding: 1% 4%;
+        border-radius: 5px;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+</style>

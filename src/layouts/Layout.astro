@@ -1,0 +1,41 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<script src="https://kit.fontawesome.com/12569092c1.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	html {
+		
+		font-family: Arial, Helvetica, sans-serif;
+		background-image: url(/public/Punta_de_Piedras_aerea.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+</style>

@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
+import Nav from '../layouts/Nav.astro';
+import Label from '../layouts/NavHorizontal.astro';
+import ContenedoresPadres from "../layouts/ContenedoresPadres.astro";
+import H1 from "../components/Titulos.astro"
+import ContenedorInformacion from "../layouts/Informacion.astro"
+import ContenedorCartas from "../layouts/ContenedoresCartas.astro"
+import Cartas from "../layouts/CartaInformativa.astro";
+import Footer from "../layouts/Footer.astro";
+---
+
+<Layout title='Nuestra comunidad'>
+    <Main>
+        <Nav text="Home" text2="Galeria" text3="Proyectos" text4='Ambiente'></Nav>
+
+        <ContenedoresPadres>
+            <H1 title='Area de fotografias'></H1>
+            <div class="imagenes">
+                <img src="/public/IngenieriaSistemas/GrupoSISTEMAS.jpg" alt="">
+                <img src="/public/IngenieriaQuimica/GrupoQuimica.jpg" alt="">
+                <img src="/public/IngenieriaMecanica/GrupoMecanica.jpg" alt="">
+                <img src="/public/IngenieriaIndustrial/GrupoIndustrial.jpg" alt="">
+
+                <video controls autoplay loop muted>
+                    <source src="/public/Galeria/video.mp4">
+                </video>
+
+                <img src="/public/Galeria/imagen.jpg" alt="">
+                <img src="/public/Galeria/imagen_2.jpg" alt="">
+                <img src="/public/Galeria/imagen_3.jpg" alt="">
+                <img src="/public/Galeria/imagen_4.jpg" alt="">
+                <img src="/public/Galeria/imagen_5.jpg" alt="">
+                
+                <video controls autoplay loop muted>
+                    <source src="/public/Galeria/video_2.mp4">
+                </video>
+
+                <img src="/public/Galeria/imagen_6.jpg" alt="">
+                <img src="/public/Galeria/imagen_7.jpg" alt="">
+                <img src="/public/Galeria/imagen_8.jpg" alt="">
+                <img src="/public/Galeria/imagen_9.jpg" alt="">
+                <img src="/public/Galeria/imagen_10.jpg" alt="">
+
+                <video controls autoplay loop muted>
+                    <source src="/public/Galeria/video_3.mp4">
+                </video>
+
+                <img src="/public/Galeria/imagen_11.jpg" alt="">
+                <img src="/public/Galeria/imagen_12.jpg" alt="">
+                <img src="/public/Galeria/imagen_13.jpg" alt="">
+                <img src="/public/Galeria/imagen_14.jpg" alt="">
+                <img src="/public/Galeria/imagen_15.jpg" alt="">
+
+                <video controls autoplay loop muted>
+                    <source src="/public/Galeria/video_4.mp4">
+                </video>
+
+                <img src="/public/Galeria/imagen_16.jpg" alt="">
+                <img src="/public/Galeria/imagen_17.jpg" alt="">
+                <img src="/public/Galeria/imagen_18.jpg" alt="">
+                <img src="/public/Galeria/imagen_19.jpg" alt="">
+                <img src="/public/Galeria/imagen_20.jpg" alt="">
+
+                <video controls autoplay loop muted>
+                    <source src="/public/Galeria/video_5.mp4">
+                </video>
+            </div>
+        </ContenedoresPadres>
+
+        <Footer></Footer>
+    </Main>
+</Layout>
+
+<style>
+
+    .imagenes{
+        text-align: center;
+        padding: 5% 0;
+    }
+    img, video{
+        width: 20%;
+        margin: 1%;
+        border-radius: 10px;
+    }
+
+    @media(max-width: 600px){
+        img, video{
+        width: 30%;
+    }
+    }
+</style>

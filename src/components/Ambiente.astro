@@ -1,0 +1,48 @@
+---
+import H1 from "../components/Titulos.astro"
+import Div from "../components/ContextoWhite.astro"
+import Slider from "../components/Slider.astro";
+---
+
+<div class="Container">
+    <div class="titulo" id="Ambiente">
+        <H1 title='TOMEMOS CONCIENCIA DE NUESTRA COMUNIDAD'></H1>
+    </div>
+
+    <div class="contenedor">
+        <Div textW='La Laguna de Punta de Piedras, situada en Isla de Margarita, Venezuela, enfrenta un deterioro alarmante en sus condiciones ambientales, lo que plantea serias preocupaciones para la salud pública y la biodiversidad local. Este ecosistema costero, que es vital para numerosas especies marinas y para las comunidades que dependen de sus recursos, está siendo afectado por múltiples factores contaminantes relacionados con la actividad humana.'></Div>
+
+        <div class="medias">
+            <div class="video">
+                <video controls autoplay muted>
+                    <source src="/public/Video/Video de WhatsApp 2024-10-28 a las 07.53.14_2012ec7c.mp4">
+                </video>
+            </div>
+            
+            <Slider 
+                imagen='/public/Jpg/Contraminacion Sector.jpg' 
+                imagen2='/public/Jpg/Contraminacion2 Sector.jpg' 
+                imagen3='/public/Jpg/Contraminacion3 Sector.jpg' 
+                imagen4='/public/Jpg/Contraminacion4 Sector.jpg' 
+                imagen5='/public/Jpg/Contraminacion5 Sector.jpg'>
+            </Slider>
+        </div>
+</div>
+
+<style>
+	.titulo{
+		padding: 2% 0
+	}
+
+	.Container .medias{
+		width: 100%;
+		text-align: center;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.Container .contenedor .medias .video video{
+		width: 40%;
+		border-radius: 10px;
+	}
+</style>

@@ -1,0 +1,23 @@
+---
+
+---
+
+<div class="ContenedorCartas">
+    <slot />
+</div>
+
+<style>
+    .ContenedorCartas { 
+        background-color: transparent;
+        padding: 0 0 0 5%;
+        display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+    
+    @media(max-width: 900px){
+        .ContenedorCartas{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        }
+    }
+</style>

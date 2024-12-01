@@ -1,0 +1,32 @@
+---
+
+---
+
+<div class="ContenedorPadre">
+    <slot />
+</div>
+
+<style>
+    .ContenedorPadre{
+        background-color: transparent;
+		transition: all 900ms;
+		margin: 0 0 5% 0;
+		padding: 0% 10%;
+    }
+
+    .ContenedorPadre:hover{
+		border-radius: 50px;
+		background-color: rgba(255, 255, 255, 0.8);
+		transition: all 900ms;
+	}
+
+	@media(max-width: 600px){
+		.ContenedorPadre{
+			padding: 10% 2% 5% 2%;
+		}
+	
+		.ContenedorPadre:hover{
+			border-radius: 20px;
+		}
+	}
+</style>

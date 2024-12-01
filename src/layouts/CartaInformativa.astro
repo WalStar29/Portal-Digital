@@ -1,0 +1,125 @@
+---
+interface Props{
+    titulo : string
+    contexto : string
+    imagen : string
+}
+
+const {titulo, contexto, imagen} = Astro.props;
+---
+
+    <div class="Cartas">
+        <div class="div"> 
+            <div class="contexto">
+                <h1>{titulo}</h1>
+                <p>{contexto}</p>
+            </div>
+    
+            <div class="imagen">
+                <img src={imagen} >
+            </div>
+        </div>
+    
+        <div class="div">
+            <slot />
+        </div>
+    </div>
+
+
+<style>
+    .Cartas{
+        margin: 5% 0;
+        border-radius: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        transition: all 500ms;
+        border: solid 1px rgb(39, 40, 41);
+    }
+
+    .Cartas:hover{
+        border: none;
+        background-color: rgb(255, 246, 224);
+        box-shadow: 0px 10px 60px 0px rgb(39, 40, 41);
+        transition: all 500ms;
+        transform: scale(1.1);
+    }
+
+    .Cartas .contexto{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 2%;
+    }
+
+    .Cartas .contexto h1, p{
+        font-size: 150%;
+        color: rgb(0, 0, 0);
+    }
+
+    .Cartas .contexto p{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .Cartas .imagen{
+        width: 20%;
+        height: 110px;
+        display: flex;
+    }
+
+    .Cartas .imagen img{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+
+    .div{
+        margin: 2% 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+    @media(max-width: 600px){
+        .Cartas{
+            width: 80%;
+        }
+
+        .Cartas:hover{
+            transform: none;
+        }
+
+        .Cartas .contexto{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+        .Cartas .imagen{
+            width: 20%;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .Cartas .imagen img{
+            width: 40%;
+            border-radius: 20px;
+        }
+
+        .div{
+            display: flex ;
+            flex-direction: column-reverse;
+        }
+    }
+</style>

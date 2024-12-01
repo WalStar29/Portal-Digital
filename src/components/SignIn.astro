@@ -1,0 +1,85 @@
+---
+import H1 from "../components/Titulos.astro"
+---
+        <!-- ContenedorPadre -->
+        <div class="SignIn">
+            <div class="titulo">
+                <H1 title="Inicio de sesion"></H1>
+            </div>
+            
+            <form action="">
+                <div class="contenedor">
+                    <div class="datos">
+                        <label for="">Ingrese su usuario: </label>
+                        <input type="text" placeholder="Escribe tu usuario" title="El campo sólo acepta letras" required>
+
+                        <label for="">Ingrese su contrasena: </label>
+                        <input type="password" placeholder="Escribe tu usuario" title="El campo sólo acepta letras" required>
+                    </div>
+
+                    <div class="botones">
+                        <button><a href="/investigador">Entrar</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+<style>
+    .SignIn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 5% 0;
+    }
+
+    .SignIn form{
+        transition: all 900ms;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 2% 0 0 0;
+        padding: 2% 0;
+    }
+
+    .SignIn form:hover{
+		border-radius: 50px;
+		background-color: rgb(255, 246, 224, 0.8);
+		box-shadow: 0px 10px 60px 0px rgb(0, 0, 0);
+		transition: all 900ms;
+	}
+
+    .SignIn form .contenedor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SignIn form .contenedor .datos{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SignIn form .contenedor .datos input{
+        margin: 2% 0 5% 0;
+        padding: 2%;
+        border-radius: 5px;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+    .SignIn form .botones{
+        margin: 2% 0 0 0;
+        width: 100%;
+    }
+
+    .SignIn form .contenedor button{
+        padding: 1% 4%;
+        border-radius: 5px;
+        border: solid 2px rgb(0, 0, 0);
+    }
+</style>

@@ -1,0 +1,23 @@
+---
+interface Props {
+	user: string;
+}
+
+const { user } = Astro.props;
+---
+
+<div class="user">
+    <h1>Investigador</h1>
+    <h1>Sr/Sra {user} Bienvenido</h1>
+</div>
+
+<style>
+    .user{
+        width: 100%;
+        padding: 2%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+    }
+</style>
