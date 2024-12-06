@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
+import Nav from '../layouts/Nav.astro';
+import User from '../components/UserInvestigador.astro';
+import Label from '../layouts/NavHorizontal.astro';
+import ContenedoresPadres from "../layouts/ContenedoresPadres.astro";
+import H1 from "../components/Titulos.astro"
+import ContenedorInformacion from "../layouts/Informacion.astro"
+import Slider from "../components/Slider.astro";
+import Footer from "../layouts/Footer.astro";
+import Botones from '../components/Botones.astro';
+---
+
+<Layout title='Laguna de Punta de Piedras'>
+    <Main>
+        <Nav text="/i_home" 
+		text2="/i_galeria" 
+		text3="/i_proyectos" 
+		text4='/i_ambiente'
+		text5='Turismo'
+        text6='/'></Nav>
+
+        <User user='Walter Castro'></User>
+        <!-- ContenedorPadre -->
+		<ContenedoresPadres>
+			<H1 title='Laguna de punta de piedras'></H1>
+			<ContenedorInformacion subtitle='' contexto='La Laguna de Punta de Piedras es un importante cuerpo de agua ubicado en la ciudad de Punta de Piedras, en el estado Nueva Esparta, Venezuela. Esta laguna es un ambiente costero cercano a un desarrollo urbano significativo en la Isla de Margarita, lo que influye en las características fisicoquímicas de sus aguas.'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/Punta_de_Piedras_aerea.jpg?raw=true" alt="">
+			</ContenedorInformacion>
+		
+            <div class="icon">
+                <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                <i class="fa-solid fa-trash" style="color: #000000;"></i>
+            </div>
+        </ContenedoresPadres>
+
+        <!-- ContenedorPadre 2 -->
+        <ContenedoresPadres>
+            <H1 title='Características de la Laguna'></H1>
+            <ContenedorInformacion subtitle='- Ubicación: ' contexto='Se encuentra en la costa centro-sur de la Isla de Margarita, cerca de la ciudad de Punta de Piedras.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+
+            <ContenedorInformacion subtitle='- Ambiente:' contexto='Es un ambiente costero que presenta variabilidad en sus condiciones hidrográficas debido a factores atmosféricos y a la influencia de actividades humanas.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+
+            <ContenedorInformacion subtitle='- Hidrografía:' contexto='La laguna muestra homogeneidad en la distribución de la temperatura y la salinidad, aunque otras variables como el oxígeno disuelto y los nutrientes presentan variaciones significativas.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+            <Botones text='Registrar'></Botones>
+        </ContenedoresPadres>
+
+        <!-- ContenedorPadre 3 -->
+        <ContenedoresPadres>
+            <H1 title='Importancia Ecológica'></H1>
+            <ContenedorInformacion subtitle='- Protección Costera:' contexto='Ayuda a estabilizar los sedimentos y reducir la erosión costera, actuando como una barrera natural contra las mareas y las tormentas.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+            
+            <ContenedorInformacion subtitle='- Hábitat:' contexto='Proporciona refugio y áreas de crianza para una gran variedad de especies marinas, incluyendo peces, crustáceos y aves.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+        
+            <ContenedorInformacion subtitle='- Ciclo de Nutrientes:' contexto='Contribuye al ciclo de nutrientes en los ecosistemas costeros, ya que sus hojas y ramas caídas se descomponen y enriquecen el suelo.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+            <Botones text='Registrar'></Botones>
+        </ContenedoresPadres>
+
+        <!-- ContenedorPadre 4 -->
+        <ContenedoresPadres>
+            <H1 title='Usos'></H1>
+            <ContenedorInformacion subtitle='- Medicina Tradicional:' contexto='Se utiliza en la medicina tradicional por sus propiedades astringentes, antihemorrágicas, antimaláricas y antidiarreicas.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+        
+            <ContenedorInformacion subtitle='- Agroforestal:' contexto='Se emplea en proyectos de reforestación y conservación de manglares debido a su capacidad para estabilizar el suelo y mejorar la calidad del agua.'>
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+            <Botones text='Registrar'></Botones>
+        </ContenedoresPadres>
+
+        <!-- ContenedorPadre 5 -->
+        <ContenedoresPadres>
+            <H1 title='La laguna en la actualidad'></H1>
+            <ContenedorInformacion subtitle='' contexto='Actualmente se a observado que la comunidad enfrenta multiples desafios relacionados con la contaminacion, la comunidad carece de infraestructuras y servicios basicos, como instalaciones academicas y centro de salud, lo que limita el acceso a recursos esenciales y afecta la calidad de vida de los habitantes. Se reportan problemas de senamiento, comom aguas negras estancadas en las calles, que representa un riesgo para la salud publica y constribuyen a la contaminacion de la laguna. Existe una necesidad urgente de aumentar la conciencia y educacion sobre la importancia de la conservacion del medio ambiente.'>
+                <Slider 
+                imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Jpg/Contraminacion%20Sector.jpg?raw=true' 
+                imagen2='https://github.com/WalStar29/Portal-Digital/blob/main/public/Jpg/Contraminacion2%20Sector.jpg?raw=true' 
+                imagen3='https://github.com/WalStar29/Portal-Digital/blob/main/public/Jpg/Contraminacion3%20Sector.jpg?raw=true' 
+                imagen4='https://github.com/WalStar29/Portal-Digital/blob/main/public/Jpg/Contraminacion4%20Sector.jpg?raw=true' 
+                imagen5='https://github.com/WalStar29/Portal-Digital/blob/main/public/Jpg/Contraminacion5%20Sector.jpg?raw=true'>
+                </Slider>
+
+                <div class="icon">
+                    <a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                </div>
+            </ContenedorInformacion>
+        </ContenedoresPadres>
+        <Footer></Footer>
+    </Main>
+</Layout>
+
+<style>
+    img{
+        width: 50%;
+        border-radius: 5px;
+    }
+
+    .icon{
+		display: flex;
+		justify-content: space-around;
+		font-size: 150%;
+		width: 100%;
+	}
+</style>

@@ -4,18 +4,22 @@ interface Props {
     text2: string;
     text3: string;
     text4: string;
+    text5: string;
+    text6: string;
 }
 
-const { text, text2, text3, text4} = Astro.props;
+const { text, text2, text3, text4, text5, text6} = Astro.props;
 ---
 
 <nav class="nav">
 
     <ul>
-        <li><a href="https://walstar29.github.io/Portal-Digital/"><i class="fa-solid fa-house" style="color: #000000;"></i>{text}</a></li>
-        <li><a href="https://walstar29.github.io/Portal-Digital/galeria/"><i class="fa-solid fa-image" style="color: #000000;"></i>{text2}</a></li>
-        <li><a href="https://walstar29.github.io/Portal-Digital/ambiente/"><i class="fa-solid fa-seedling" style="color: #000000;"></i>{text4}</a></li>
-        <li><a href="https://walstar29.github.io/Portal-Digital/proyectos/"><i class="fa-solid fa-helmet-safety" style="color: #000000;"></i>{text3}</a></li>
+        <li><a href={text}><i class="fa-solid fa-house" style="color: #000000;"></i>Home</a></li>
+        <li><a href={text2}><i class="fa-solid fa-image" style="color: #000000;"></i>Galeria</a></li>
+        <li><a href={text4}><i class="fa-solid fa-seedling" style="color: #000000;"></i>Ambiente</a></li>
+        <li><a href={text3}><i class="fa-solid fa-helmet-safety" style="color: #000000;"></i>Proyectos</a></li>
+        <li><a href=""><i class="fa-solid fa-umbrella-beach" style="color: #000000;"></i>{text5}</a></li>
+        <li><a href={text6}>Menu Principal</a></li>
     </ul>
 
 </nav>
@@ -33,10 +37,11 @@ const { text, text2, text3, text4} = Astro.props;
         
         <div class="slide">
             <ul>
-                <li><a class="id" href="https://walstar29.github.io/Portal-Digital/"><i class="fa-solid fa-house" style="color: #000000;"></i> HOME</a></li>
-                <li><a class="id" href="https://walstar29.github.io/Portal-Digital/galeria/"><i class="fa-solid fa-image" style="color: #000000;"></i> GALERIA </a></li>
-                <li><a class="id" href="https://walstar29.github.io/Portal-Digital/ambiente/"><i class="fa-solid fa-seedling" style="color: #000000;"></i>AMBIENTE</a></li>
-                <li><a class="id" href="https://walstar29.github.io/Portal-Digital/proyectos/"><i class="fa-solid fa-helmet-safety" style="color: #000000;"></i> NUESTRO PROYECTOS</a></li>
+                <li><a class="id" href={text}><i class="fa-solid fa-house" style="color: #000000;"></i> HOME</a></li>
+                <li><a class="id" href={text2}><i class="fa-solid fa-image" style="color: #000000;"></i> GALERIA </a></li>
+                <li><a class="id" href={text4}><i class="fa-solid fa-seedling" style="color: #000000;"></i>AMBIENTE</a></li>
+                <li><a class="id" href={text3}><i class="fa-solid fa-helmet-safety" style="color: #000000;"></i> NUESTRO PROYECTOS</a></li>
+                <li><a href=""><i class="fa-solid fa-umbrella-beach" style="color: #000000;"></i>TURISMO</a></li>
             </ul>
         </div>
 </label>
@@ -69,11 +74,11 @@ const { text, text2, text3, text4} = Astro.props;
         text-decoration: none;
         color: #000000;
         display: block;
-        padding: 15% 0;
+        padding: 20% 0;
     }
 
     .nav li a:hover{
-        padding: 12% 0%;
+        padding: 15% 0%;
         background-color:rgb(39, 40, 41);
         color: #ffffff;
         cursor: pointer;

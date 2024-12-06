@@ -1,7 +1,6 @@
 ---
 interface Props{
     text: string
- 
 }
 
 const {text} = Astro.props
@@ -12,21 +11,17 @@ const {text} = Astro.props
 </div>
 
 <style>
-
     .botones{
-        padding: 2% 0;
-        display: flex;
-        justify-content: space-evenly;
-    }
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	}
 
     button{
-        border: none;
-        border-radius: 10px;
-        padding: 1% 2%;
-        background-color: rgb(255, 255, 255);
-    }
-
-    button:hover{
-        background-color: rgb(79, 117, 255);
-    }
+		padding: 2% 5%;
+		border-radius: 10px;
+		background-color: rgb(255, 246, 224);
+		border: none;
+		border: solid 1px rgb(0, 0, 0);
+	}
 </style>

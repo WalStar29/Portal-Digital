@@ -1,0 +1,257 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
+import Nav from '../layouts/Nav.astro';
+import User from '../components/UserInvestigador.astro';
+import Label from '../layouts/NavHorizontal.astro';
+import ContenedoresPadres from "../layouts/ContenedoresPadres.astro";
+import H1 from "../components/Titulos.astro"
+import ContenedorInformacion from "../layouts/Informacion.astro"
+import ContenedorCartas from "../layouts/ContenedoresCartas.astro"
+import Cartas from "../layouts/CartaInformativa.astro";
+import Footer from "../layouts/Footer.astro";
+import Botones from '../components/Botones.astro';
+---
+
+<Layout title="Investigador">
+    <Main>
+		<Nav text="/i_home" 
+		text2="/i_galeria" 
+		text3="/i_proyectos" 
+		text4='/i_ambiente'
+		text5='Turismo'
+		text6='/'></Nav>
+		
+        <User user='Walter Castro'></User>
+		<Label text='Nuestro ambiente' 
+			text2='Biotica de la laguna' 
+			text3='Sectores de la comunidad' 
+			text4='Proyectos' 
+			text5='Cerrar sesion' 
+			id='investigador.html#Ambiente' 
+			id2='investigador.html#BioticaLaguna' 
+			id3='investigador.html#Sectores' 
+			id4='investigador.html#proyectos' 
+			id5='/loginUser'>
+		</Label>
+
+		<ContenedoresPadres>
+			<div id="PuntaPiedras">
+				<H1 title='Punta de piedras'></H1>
+			</div>
+			<ContenedorInformacion subtitle='' contexto='Punta de Piedras es una ciudad ubicada en la costa centro-sur de la Isla de Margarita​ y tiene una población,  según censo de 10.000 habitantes. Es la capital del Municipio Tubores, estado Nueva Esparta, que forma parte de la República Bolivariana de Venezuela. Es la puerta de entrada a la isla, ya que ahí se encuentran tres puertos marítimos; desde donde se puede navegar en pequeñas embarcaciones a las vecinas Isla de Cubagua e Isla de Coche. También conecta mediante el uso de Ferrys a la isla con el continente, específicamente con las ciudades de Puerto La Cruz, Cumaná y La Guaira. El clima es como el resto de la isla, tropical, de los 28º hasta los 42°C.'>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30117.910166229405!2d-64.11043915274557!3d10.904541562118578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c31f7cc9dcf8c31%3A0x40babd702bc746bf!2sPunta%20de%20Piedras%2C%20Nueva%20Esparta!5e1!3m2!1ses!2sve!4v1730230321815!5m2!1ses!2sve" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</ContenedorInformacion>
+			
+			<div class="icon">
+				<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+				<i class="fa-solid fa-trash" style="color: #000000;"></i> 
+			</div>
+		</ContenedoresPadres>
+
+			<!-- ContenedorPadre 2 -->
+		<ContenedoresPadres>
+			<div id="FestividadesTradiciones">
+				<H1 title='Festividades y tradiciones'></H1>
+			</div>
+			<ContenedorInformacion subtitle='1) San Simón Apóstol:' contexto='Celebrado el 28 de octubre, es una de las festividades más importantes de la ciudad. Incluye misas, procesiones y actividades culturales.'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/FestividadesyTradiciones/SanSimonApostol.jpg?raw=true" alt="San Simon Apostol">
+				
+				<div class="icon">
+					<label for="">id: 1</label>
+					<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+					<i class="fa-solid fa-trash" style="color: #000000;"></i>
+				</div>
+			</ContenedorInformacion>
+
+			<ContenedorInformacion subtitle='2) Nuestra Señora de Las Mercedes:' contexto='Celebrada el 24 de septiembre, es una de las festividades más importantes del municipio. La devoción a esta virgen fue introducida en la comunidad a principios del siglo XX.'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/FestividadesyTradiciones/NuestraSe%C3%B1oradeLasMercedes.jpg?raw=true" alt="">
+				
+				<div class="icon">
+					<label for="">id: 1</label>
+					<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+					<i class="fa-solid fa-trash" style="color: #000000;"></i>
+				</div>
+			</ContenedorInformacion>
+			
+			<ContenedorInformacion subtitle='3) Virgen del Carmen y Virgen del Valle:' contexto='Se realizan tradicionales paseos por el mar en honor a estas vírgenes, que son muy veneradas en la región.'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/FestividadesyTradiciones/VirgendelCarmenyVirgendelValle.jpg?raw=true" alt="">
+			
+				<div class="icon">
+					<label for="">id: 1</label>
+					<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+					<i class="fa-solid fa-trash" style="color: #000000;"></i>
+				</div>
+			</ContenedorInformacion>
+			
+			<ContenedorInformacion subtitle='4) Misas de Aguinaldo:' contexto='Durante la época navideña, se celebran misas de aguinaldo, que son una serie de misas matutinas acompañadas de música y cantos tradicionales.'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/FestividadesyTradiciones/MisasdeAguinaldo.jpg?raw=true" alt="">
+			
+				<div class="icon">
+					<label for="">id: 1</label>
+					<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+					<i class="fa-solid fa-trash" style="color: #000000;"></i>
+				</div>
+			</ContenedorInformacion>
+
+			<ContenedorInformacion subtitle='5) Velorios de Cruz:' contexto='En el mes de mayo, se llevan a cabo los velorios de cruz, una tradición que incluye rezos, cantos y ofrendas florales en honor a la Santa Cruz'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/FestividadesyTradiciones/VeloriosdeCruz.jpg?raw=true" alt="">
+			
+				<div class="icon">
+					<label for="">id: 1</label>
+					<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+					<i class="fa-solid fa-trash" style="color: #000000;"></i>
+				</div>
+			</ContenedorInformacion>
+			
+				<Botones text='Registrar'></Botones>
+		</ContenedoresPadres>
+
+		<!-- ContenedorPadre 3 -->
+		<ContenedoresPadres>
+			<div id="ActividadesCulturalesEconómicas">
+				<H1 title='Actividades Culturales y Económicas'></H1>
+			</div>
+			<ContenedorInformacion subtitle='1) Pesca y Comercio Marítimo:' contexto='La pesca y el comercio marítimo son actividades económicas fundamentales en el municipio, debido a su ubicación costera que se encuentra la laguna de punta de piedras.'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/FestividadesyTradiciones/PescayComercioMar%C3%ADtimo.jpg?raw=true" alt="">
+			
+				<div class="icon">
+					<label for="">id: 1</label>
+					<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+					<i class="fa-solid fa-trash" style="color: #000000;"></i>
+				</div>
+			</ContenedorInformacion>
+
+			<ContenedorInformacion subtitle='2) Turismo:' contexto='El municipio cuenta con atractivos turísticos como la Laguna de La Restinga, las ruinas de Cubagua y diversas playas, que atraen a visitantes tanto nacionales como internacionales.'>
+				<img src="https://github.com/WalStar29/Portal-Digital/blob/main/public/FestividadesyTradiciones/Turismo.jpg?raw=true" alt="">
+			
+				<div class="icon">
+					<label for="">id: 1</label>
+					<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+					<i class="fa-solid fa-trash" style="color: #000000;"></i>
+				</div>
+			</ContenedorInformacion>
+
+			<Botones text='Registrar'></Botones>
+		</ContenedoresPadres>
+
+		<!-- ContenedorPadre 4 -->
+		<ContenedoresPadres>
+			<div id="Faunas">
+				<H1 title='Fauna de Punta de piedras'></H1>
+			</div>
+			<ContenedorCartas>
+				<Cartas titulo='Garza blanca' contexto='Es una especie de ave de la familia Ardeidae. Esta garza mide de pico a cola entre 80 y 105 cm, su envergadura alar está entre 130 y 170 cm. Su peso oscila entre los 700 y 1,500 g.' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Especies/garza-blanca.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+
+				<Cartas titulo='La piquitinga' contexto='La piquitinga, también conocida como Lile stolifera, es una especie de pez de la familia Clupeidae. Este pez es comúnmente conocido como sardina rayada o sardineta piquitinga.' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Especies/lile-piquitinga.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+				
+				<Cartas titulo='Flamencos' contexto='Los flamencos son aves sociales que viven en grandes colonias, lo que les ayuda a protegerse de los depredadores y a encontrar alimento más fácilmente. Su comportamiento y apariencia los convierten en una de las aves más emblemáticas y admiradas del mundo.' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Especies/Flamencos.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+
+				<Cartas titulo='Diapterus rhombeus' contexto='El Diapterus rhombeus es una especie interesante tanto por su adaptabilidad a diferentes ambientes como por su importancia en los ecosistemas costeros.' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Especies/pez.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+			</ContenedorCartas>
+
+			<Botones text='Registrar'></Botones>
+		</ContenedoresPadres>
+
+
+		<!-- ContenedorPadre 5 -->
+		<ContenedoresPadres>
+			<div id="Flora">
+				<H1 title='Flora de la laguna'></H1>
+			</div>
+			<ContenedorCartas>
+				<Cartas titulo='Mangle rojo' contexto='Es una especie vegetal de la familia Rhizophoraceae, la cual cuenta con alrededor de 120 especies distribuidas en 16 géneros, siendo el género Rhizophora el más conocido, dominando las partes más anegadas de los ecosistemas manglar y la zona intermareal.' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Flora/Mangle%20rojo.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+
+				<Cartas titulo='Pastos Marinos' contexto='Los pastos marinos son plantas acuáticas con flores que forman densas praderas submarinas en áreas poco profundas a lo largo de las costas. Los pastos marinos son esenciales para la biodiversidad marina y la salud de los océanos.' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Flora/Pastos%20Marinos.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+
+				<Cartas titulo='Mangle negro' contexto='El mangle negro (Avicennia germinans) es una especie de árbol o arbusto perenne que pertenece a la familia Acanthaceae. Es una planta fascinante y vital para los ecosistemas costeros. El mangle negro es una especie clave en los ecosistemas de manglares y desempeña un papel crucial en la protección y sostenibilidad de las costas.' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Flora/Mangle%20negro.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+
+				<Cartas titulo='Mangle blanco' contexto='El mangle blanco (Laguncularia racemosa) es una especie de árbol o arbusto perenne que pertenece a la familia Combretaceae. Es una planta clave en los ecosistemas de manglares y tiene varias características y funciones importantes. ' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Flora/Mangle%20blanco.jpg?raw=true'>
+					<div class="icon">
+						<label for="">id: 1</label>
+						<a href="/modificarInfo"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+						<i class="fa-solid fa-trash" style="color: #000000;"></i>
+					</div>
+				</Cartas>
+			</ContenedorCartas>
+
+			<Botones text='Registrar'></Botones>
+		</ContenedoresPadres>
+        <Footer></Footer>
+    </Main>  
+</Layout>
+
+<style>
+
+	iframe{
+		border-radius: 20px;
+		transition: all 400ms;
+        margin: 5% 0;
+	}
+
+	iframe:hover{
+		transform: scale(1.1);
+        transition: all 400ms;
+	}
+
+	img{
+		margin: 1% 0 5% 0;
+		width: 20%;
+		border-radius: 5px;
+	}
+
+	.icon{
+		display: flex;
+		justify-content: space-around;
+		font-size: 150%;
+		width: 100%;
+	}
+
+	@media(max-width: 900px){
+		iframe:hover{
+			transform: none;
+		}
+	}
+</style>

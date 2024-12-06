@@ -13,22 +13,29 @@ import Footer from "../layouts/Footer.astro";
 
 <Layout title="Cuida nuestra isla">
 	<Main>
-		<Nav text="Home" text2="Galeria" text3="Proyectos" text4='Ambiente'></Nav>
-		<Label text='Nuestro ambiente' 
-			text2='Especies' 
-			text3='Faunas' 
-			text4='Sectores' 
-			text5='' 
-			id='index.html#Ambiente' 
-			id2='index.html#Especies' 
-			id3='index.html#Faunas' 
-			id4='index.html#Sectores' 
-			id5=''>
+		<Nav text="https://walstar29.github.io/Portal-Digital/" 
+		text2="https://walstar29.github.io/Portal-Digital/galeria/" 
+		text3="https://walstar29.github.io/Portal-Digital/proyectos/" 
+		text4='https://walstar29.github.io/Portal-Digital/ambiente/'
+		text5='Turismo'></Nav>
+		
+		<Label text='Punta de Piedras' 
+			text2='Festividades y Tradiciones' 
+			text3='Actividades Culturales y Económicas' 
+			text4='Faunas' 
+			text5='Flora' 
+			id='index.html#PuntaPiedras' 
+			id2='index.html#FestividadesTradiciones' 
+			id3='index.html#ActividadesCulturalesEconómicas' 
+			id4='index.html#Faunas' 
+			id5='index.html#Flora'>
 		</Label>
 
 		<!-- ContenedorPadre -->
 		<ContenedoresPadres>
-			<H1 title='Punta de piedras'></H1>
+			<div id="PuntaPiedras">
+				<H1 title='Punta de piedras'></H1>
+			</div>
 			<ContenedorInformacion subtitle='' contexto='Punta de Piedras es una ciudad ubicada en la costa centro-sur de la Isla de Margarita​ y tiene una población,  según censo de 10.000 habitantes. Es la capital del Municipio Tubores, estado Nueva Esparta, que forma parte de la República Bolivariana de Venezuela. Es la puerta de entrada a la isla, ya que ahí se encuentran tres puertos marítimos; desde donde se puede navegar en pequeñas embarcaciones a las vecinas Isla de Cubagua e Isla de Coche. También conecta mediante el uso de Ferrys a la isla con el continente, específicamente con las ciudades de Puerto La Cruz, Cumaná y La Guaira. El clima es como el resto de la isla, tropical, de los 28º hasta los 42°C.'>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30117.910166229405!2d-64.11043915274557!3d10.904541562118578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c31f7cc9dcf8c31%3A0x40babd702bc746bf!2sPunta%20de%20Piedras%2C%20Nueva%20Esparta!5e1!3m2!1ses!2sve!4v1730230321815!5m2!1ses!2sve" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</ContenedorInformacion>
@@ -37,7 +44,7 @@ import Footer from "../layouts/Footer.astro";
 
 		<!-- ContenedoPadre 2 -->
 		<ContenedoresPadres>
-			<div>
+			<div id="FestividadesTradiciones">
 				<H1 title='Festividades y tradiciones'></H1>
 			</div>
 			<ContenedorInformacion subtitle='1) San Simón Apóstol:' contexto='Celebrado el 28 de octubre, es una de las festividades más importantes de la ciudad. Incluye misas, procesiones y actividades culturales.'>
@@ -64,7 +71,7 @@ import Footer from "../layouts/Footer.astro";
 
 		<!-- ContenedoPadre 3 -->
 		<ContenedoresPadres>
-			<div>
+			<div id="ActividadesCulturalesEconómicas">
 				<H1 title='Actividades Culturales y Económicas'></H1>
 			</div>
 			<ContenedorInformacion subtitle='1) Pesca y Comercio Marítimo:' contexto='La pesca y el comercio marítimo son actividades económicas fundamentales en el municipio, debido a su ubicación costera que se encuentra la laguna de punta de piedras.'>
@@ -78,7 +85,7 @@ import Footer from "../layouts/Footer.astro";
 
 		<!-- ContenedorPadre 4 -->
 		<ContenedoresPadres>
-			<div id="Especies">
+			<div id="Faunas">
 				<H1 title='Fauna de Punta de piedras'></H1>
 			</div>
 			<ContenedorCartas>
@@ -91,7 +98,7 @@ import Footer from "../layouts/Footer.astro";
 
 		<!-- ContenedorPadre 5 -->
 		<ContenedoresPadres>
-			<div id="Faunas">
+			<div id="Flora">
 				<H1 title='Flora de la laguna'></H1>
 			</div>
 			<ContenedorCartas>
@@ -101,20 +108,6 @@ import Footer from "../layouts/Footer.astro";
 				<Cartas titulo='Mangle blanco' contexto='El mangle blanco (Laguncularia racemosa) es una especie de árbol o arbusto perenne que pertenece a la familia Combretaceae. Es una planta clave en los ecosistemas de manglares y tiene varias características y funciones importantes. ' imagen='https://github.com/WalStar29/Portal-Digital/blob/main/public/Flora/Mangle%20blanco.jpg?raw=true'></Cartas>
 			</ContenedorCartas>
 		</ContenedoresPadres>
-
-		<!-- ContenedorPadre 5 
-		<ContenedoresPadres>
-			<div id="Sectores">
-				<H1 title='Sectores de punta de piedra'></H1>
-			</div>
-			<ContenedorCartas>
-				<Cartas titulo='hola' contexto='ey tu' imagen='/public/Especies/garza-blanca.jpg'></Cartas>
-				<Cartas titulo='hola' contexto='ey tu' imagen='/public/Especies/garza-blanca.jpg'></Cartas>
-				<Cartas titulo='hola' contexto='ey tu' imagen='/public/Especies/garza-blanca.jpg'></Cartas>
-				<Cartas titulo='hola' contexto='ey tu' imagen='/public/Especies/garza-blanca.jpg'></Cartas>
-			</ContenedorCartas>
-		</ContenedoresPadres> -->
-
 		<Footer></Footer>
 	</Main>
 </Layout>

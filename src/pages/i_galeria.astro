@@ -2,23 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import Main from '../layouts/Main.astro';
 import Nav from '../layouts/Nav.astro';
+import User from '../components/UserInvestigador.astro';
 import Label from '../layouts/NavHorizontal.astro';
 import ContenedoresPadres from "../layouts/ContenedoresPadres.astro";
 import H1 from "../components/Titulos.astro"
-import ContenedorInformacion from "../layouts/Informacion.astro"
-import ContenedorCartas from "../layouts/ContenedoresCartas.astro"
-import Cartas from "../layouts/CartaInformativa.astro";
 import Footer from "../layouts/Footer.astro";
+import Botones from '../components/Botones.astro';
 ---
 
 <Layout title='Nuestra comunidad'>
     <Main>
-        <Nav text="https://walstar29.github.io/Portal-Digital/" 
-		text2="https://walstar29.github.io/Portal-Digital/galeria/" 
-		text3="https://walstar29.github.io/Portal-Digital/proyectos/" 
-		text4='https://walstar29.github.io/Portal-Digital/ambiente/'
-		text5='Turismo'></Nav>
+        <Nav text="/i_home" 
+		text2="/i_galeria" 
+		text3="/i_proyectos" 
+		text4='/i_ambiente'
+		text5='Turismo'
+        text6='/'></Nav>
 
+        <User user='Walter Castro'></User>
         <ContenedoresPadres>
             <H1 title='Area de fotografias'></H1>
             <div class="imagenes">
@@ -71,6 +72,8 @@ import Footer from "../layouts/Footer.astro";
                     <source src="https://drive.google.com/file/d/1CuGpt8PwZB5hYQRxwEoBAA592NW0BI4r/view?usp=sharing">
                 </video>
             </div>
+
+            <Botones text='Registrar'></Botones>
         </ContenedoresPadres>
 
         <Footer></Footer>
@@ -93,5 +96,5 @@ import Footer from "../layouts/Footer.astro";
         img, video{
         width: 30%;
     }
-    }
+}
 </style>

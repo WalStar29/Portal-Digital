@@ -37,26 +37,20 @@ import H1 from "../components/Titulos.astro"
 
 <style>
     .SignUp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 0 5% 0;
+        margin: -2% 0 5% 0;
     }
 
     .SignUp form{
         transition: all 900ms;
-        border-radius: 25px;
+        border-radius: 10px;
         background-color: rgb(255, 255, 255, 0.8);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         width: 100%;
         margin: 2% 0 0 0;
         padding: 2% 0;
     }
 
     .SignUp form:hover{
-		border-radius: 50px;
+		border-radius: 25px;
 		background-color: rgb(255, 246, 224, 0.8);
 		box-shadow: 0px 10px 60px 0px rgb(0, 0, 0);
 		transition: all 900ms;
@@ -76,14 +70,14 @@ import H1 from "../components/Titulos.astro"
     .SignUp form .contenedor .datos input{
         margin: 2% 0 5% 0;
         padding: 2%;
-        border-radius: 5px;
-        border: solid 2px rgb(0, 0, 0);
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
     }
 
     .SignUp form .contenedor .comentario{
         width: 40%;
-        display: flex;
-        flex-direction: column;
     }
 
     .SignUp form .contenedor .comentario textarea{
@@ -106,4 +100,35 @@ import H1 from "../components/Titulos.astro"
         border: solid 2px rgb(0, 0, 0);
     }
 
+    @media(max-width: 900px){
+        .SignUp{
+            padding: 10% 0 0 0;
+        }
+
+        .SignUp form .contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .SignUp form .contenedor .datos{
+            width: 90%;
+        }
+
+        .SignUp form .contenedor .datos input{
+            padding: 3% 0 3% 1%;
+        }
+
+        .SignUp form .contenedor .comentario{
+            width: 80%;
+            margin: 2% 0;
+        }
+
+        .SignUp form .botones input{
+            margin: 2% 0 0 0;
+            padding: 3% 5%;
+            border-radius: 5px;
+            border: solid 2px rgb(0, 0, 0);
+        }
+    }
 </style>
