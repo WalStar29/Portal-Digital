@@ -1,13 +1,14 @@
 ---
 interface Props{
     text: string
+	text2: string
 }
 
-const {text} = Astro.props
+const {text, text2} = Astro.props
 ---
 
 <div class="botones">
-    <button>{text}</button>
+    <button><a href={text2}>{text}</a></button>
 </div>
 
 <style>

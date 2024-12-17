@@ -1,6 +1,12 @@
 ---
+interface Props {
+    text: string;
+}
+const {text} = Astro.props;
+
 import H1 from "../components/Titulos.astro"
 ---
+
         <!-- ContenedorPadre -->
         <div class="SignIn">
             <div class="titulo">
@@ -18,7 +24,7 @@ import H1 from "../components/Titulos.astro"
                     </div>
 
                     <div class="botones">
-                        <button><a href="https://walstar29.github.io/Portal-Digital/i_home/">Entrar</a></button>
+                        <button><a href={text}>Entrar</a></button>
                     </div>
                 </div>
             </form>
@@ -86,6 +92,10 @@ import H1 from "../components/Titulos.astro"
     }
 
     @media(max-width: 900px){
+        .SignIn{
+        padding: 10% 0 0 0;
+        }
+
         .SignIn form .contenedor .datos{
             width: 80%;
         }

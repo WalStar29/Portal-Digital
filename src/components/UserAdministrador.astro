@@ -8,7 +8,7 @@ const { user } = Astro.props;
 
 <div class="div">
     <div class="user">
-        <h1>Investigador</h1>
+        <h1>Administrador</h1>
         <h1>Sr/Sra {user} Bienvenido</h1>
     </div>
 </div>
@@ -22,14 +22,15 @@ const { user } = Astro.props;
         text-align: center;
     }
     .user{
-        padding: 0 2%;
-        color: rgb(0, 0, 0);
+        width: 100%;
     }
 
     @media(max-width: 900px){
         .div{
             width: 100%;
-            padding: 5% 0 0 0;
+            padding: 5% 0;
+            font-size: 12px;
         }
     }
+
 </style>

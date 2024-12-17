@@ -1,25 +1,40 @@
 ---
 interface Props {
-	text: string;
+	enlace: string;
+    enlace2: string;
+    enlace3: string;
+    enlace4: string;
+    enlace5: string;
+    enlace6: string;
+
+    text: string;
     text2: string;
     text3: string;
     text4: string;
     text5: string;
     text6: string;
+
+    icon: string;
+    icon2: string;
+    icon3: string;
+    icon4: string;
+    icon5: string;
+    icon6: string;
 }
 
-const { text, text2, text3, text4, text5, text6} = Astro.props;
+const { enlace, enlace2, enlace3, enlace4, enlace5, enlace6, 
+        text, text2, text3, text4, text5, text6, 
+        icon, icon2, icon3, icon4, icon5, icon6} = Astro.props;
 ---
 
 <nav class="nav">
-
     <ul>
-        <li><a href={text}><i class="fa-solid fa-house" style="color: #000000;"></i>Home</a></li>
-        <li><a href={text2}><i class="fa-solid fa-image" style="color: #000000;"></i>Galeria</a></li>
-        <li><a href={text4}><i class="fa-solid fa-seedling" style="color: #000000;"></i>Ambiente</a></li>
-        <li><a href={text3}><i class="fa-solid fa-helmet-safety" style="color: #000000;"></i>Proyectos</a></li>
-        <li><a href=""><i class="fa-solid fa-umbrella-beach" style="color: #000000;"></i>{text5}</a></li>
-        <li><a href={text6}>Menu Principal</a></li>
+        <li><a href={enlace}><i class={icon} style="color: #000000;"></i>{text}</a></li>
+        <li><a href={enlace2}><i class={icon2} style="color: #000000;"></i>{text2}</a></li>
+        <li><a href={enlace3}><i class={icon3} style="color: #000000;"></i>{text3}</a></li>
+        <li><a href={enlace4}><i class={icon4} style="color: #000000;"></i>{text4}</a></li>
+        <li><a href={enlace5}><i class={icon5} style="color: #000000;"></i>{text5}</a></li>
+        <li><a href={enlace6}><i class={icon6} style="color: #000000;"></i>{text6}</a></li>
     </ul>
 
 </nav>
@@ -37,12 +52,12 @@ const { text, text2, text3, text4, text5, text6} = Astro.props;
         
         <div class="slide">
             <ul>
-                <li><a class="id" href={text}><i class="fa-solid fa-house" style="color: #000000;"></i> HOME</a></li>
-                <li><a class="id" href={text2}><i class="fa-solid fa-image" style="color: #000000;"></i> GALERIA </a></li>
-                <li><a class="id" href={text4}><i class="fa-solid fa-seedling" style="color: #000000;"></i>AMBIENTE</a></li>
-                <li><a class="id" href={text3}><i class="fa-solid fa-helmet-safety" style="color: #000000;"></i> NUESTRO PROYECTOS</a></li>
-                <li><a href=""><i class="fa-solid fa-umbrella-beach" style="color: #000000;"></i>TURISMO</a></li>
-                <li><a href={text6}>Menu Principal</a></li>
+                <li><a class="id" href={enlace}><i class={icon} style="color: #000000;"></i>{text}</a></li>
+                <li><a class="id" href={enlace2}><i class={icon2} style="color: #000000;"></i>{text2}</a></li>
+                <li><a class="id" href={enlace3}><i class={icon3} style="color: #000000;"></i>{text3}</a></li>
+                <li><a class="id" href={enlace4}><i class={icon4} style="color: #000000;"></i>{text4}</a></li>
+                <li><a class="id" href={enlace5}><i class={icon5} style="color: #000000;"></i>{text5}</a></li>
+                <li><a class="id" href={enlace6}><i class={icon6} style="color: #000000;"></i>{text6}</a></li>
             </ul>
         </div>
 </label>
@@ -60,7 +75,7 @@ const { text, text2, text3, text4, text5, text6} = Astro.props;
     }
 
     .nav ul{
-        width: 60%;
+        width: 90%;
         display: flex;
         list-style: none;
         text-align: center;
@@ -75,7 +90,7 @@ const { text, text2, text3, text4, text5, text6} = Astro.props;
         text-decoration: none;
         color: #000000;
         display: block;
-        padding: 20% 0;
+        padding: 15% 0;
     }
 
     .nav li a:hover{
@@ -83,7 +98,7 @@ const { text, text2, text3, text4, text5, text6} = Astro.props;
         background-color:rgb(39, 40, 41);
         color: #ffffff;
         cursor: pointer;
-        transform: scale(1.1);
+        transform: scale(1.0);
         transition: all 100ms;
         border-radius: 10px;
     }

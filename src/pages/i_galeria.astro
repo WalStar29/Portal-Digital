@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Main from '../layouts/Main.astro';
 import Nav from '../layouts/Nav.astro';
 import User from '../components/UserInvestigador.astro';
-import Label from '../layouts/NavHorizontal.astro';
 import ContenedoresPadres from "../layouts/ContenedoresPadres.astro";
 import H1 from "../components/Titulos.astro"
 import Footer from "../layouts/Footer.astro";
@@ -12,12 +11,12 @@ import Botones from '../components/Botones.astro';
 
 <Layout title='Nuestra comunidad'>
     <Main>
-        <Nav text="https://walstar29.github.io/Portal-Digital/i_home/" 
-		text2="https://walstar29.github.io/Portal-Digital/i_galeria/" 
-		text3="https://walstar29.github.io/Portal-Digital/i_proyectos/" 
-		text4='https://walstar29.github.io/Portal-Digital/i_ambiente/'
-		text5='Turismo'
-		text6='https://walstar29.github.io/Portal-Digital/'></Nav>
+        <Nav enlace="https://walstar29.github.io/Portal-Digital/i_home/" text="Home" icon=' fa-solid fa-house'
+		enlace2="https://walstar29.github.io/Portal-Digital/i_galeria/" text2='Galeria' icon2='fa-solid fa-image'
+		enlace3="https://walstar29.github.io/Portal-Digital/i_proyectos/" text3='Proyectos' icon3='fa-solid fa-seedling'
+		enlace4='https://walstar29.github.io/Portal-Digital/i_ambiente/' text4='Ambientes' icon4='fa-solid fa-helmet-safety'
+		enlace5='' text5='Turismo' icon5='fa-solid fa-umbrella-beach'
+		enlace6='https://walstar29.github.io/Portal-Digital/' text6='Regresar' icon6='fa-solid fa-person-walking-arrow-loop-left'></Nav>
 
         <User user='Walter Castro'></User>
         <ContenedoresPadres>
@@ -73,7 +72,7 @@ import Botones from '../components/Botones.astro';
                 </video>
             </div>
 
-            <Botones text='Registrar'></Botones>
+            <Botones text='Registrar' text2=''></Botones>
         </ContenedoresPadres>
 
         <Footer></Footer>

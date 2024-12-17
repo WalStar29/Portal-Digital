@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
+import Nav from '../layouts/Nav.astro';
+import User from '../components/UserAdministrador.astro';
+import Notificaciones from '../components/Notificaciones.astro';
+import Footer from "../layouts/Footer.astro";
+
+---
+
+<Layout title='Registro Consejales'>
+    <Main>
+        <Nav enlace="https://walstar29.github.io/Portal-Digital/adminInvestigadores/" text=" Investigadores" icon='fa-solid fa-magnifying-glass'
+		enlace2="https://walstar29.github.io/Portal-Digital/adminConsejales/" text2=' Consejos ' icon2='fa-solid fa-people-arrows'
+		enlace3="" text3=' Notificaciones' icon3='fa-solid fa-message'
+		enlace4='https://walstar29.github.io/Portal-Digital/' text4=' Regresar' icon4='fa-solid fa-person-walking-arrow-loop-left'
+		enlace5='' text5='' icon5=''
+		enlace6='' text6='' icon6=''></Nav>
+
+        <Footer></Footer>
+    </Main>
+</Layout>
+
+<style>
+
+</style>

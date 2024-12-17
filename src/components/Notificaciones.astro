@@ -1,0 +1,100 @@
+---
+
+---
+
+<div class="notificaciones">
+    <div class="perfil">
+        <i class="fa-regular fa-user"></i>
+    </div>
+
+    <div class="carta">
+        <div class="name"><b>Walter castro</b></div>
+        <div class="flex">
+            <div class="informacion">
+                <p><b>- Cedula:</b> 29582989</p>
+                <p><b>- Telefono:</b> 04147996937</p>
+                <p><b>- Correo electronico: </b>waltercastro172913@gmail.com</p>
+                <p><b>- Comentario:</b> Solicito permiso para ser parte del los investigadores</p>
+            </div>
+
+            <button><i class="fa-solid fa-check"></i></button>
+        </div>
+    </div>
+</div>
+
+<style>
+    
+.notificaciones{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2% 0;
+}
+
+.perfil{
+    padding: 2%;
+}
+
+.perfil i{
+    font-size:300%;
+}
+
+.carta{
+    width: 50%;
+    border: solid black 3px;
+    border-radius: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.name{
+    padding: 2% 0 2% 2%;
+    background-color: aliceblue;
+    border-radius: 15px 15px 0 0;
+}
+
+.informacion{
+    width: 100%;
+    padding: 0 2% 0 2%;
+}
+
+button{
+    border-radius: 0 0 15px 0;
+    border: none;
+    width: 10%;
+}
+
+button i{
+    font-size: 30px;
+}
+
+@media(max-width: 900px){
+    .notificaciones{
+        width: 100%;
+    }
+
+    .perfil{
+        width: 20%;
+    }
+
+    .carta{
+        width: 100%;
+        border: solid black 3px;
+        border-radius: 20px;
+    }
+
+    .informacion{
+        width: 80%;
+        padding: 0 2% 0 2%;
+    }
+
+    button{
+        width: 20%;
+    }
+
+    button i{
+        font-size: 30px;
+    }
+}
+</style>

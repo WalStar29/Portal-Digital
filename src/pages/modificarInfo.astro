@@ -2,21 +2,19 @@
 import Layout from "../layouts/Layout.astro"
 import Main from "../layouts/Main.astro"
 import Nav from "../layouts/Nav.astro"
-
 import Modificacion from "../components/ModificarInfo.astro"
-
 import Footer from "../layouts/Footer.astro"
 ---
 
 
 <Layout title="Modificar informacion">
     <Main>
-        <Nav text="https://walstar29.github.io/Portal-Digital/" 
-		text2="https://walstar29.github.io/Portal-Digital/galeria/" 
-		text3="https://walstar29.github.io/Portal-Digital/proyectos/" 
-		text4='https://walstar29.github.io/Portal-Digital/ambiente/'
-		text5='Turismo'
-        text6=''></Nav>
+        <Nav enlace="/i_home" text="Home" icon=' fa-solid fa-house'
+		enlace2="/i_galeria" text2='Galeria' icon2='fa-solid fa-image'
+		enlace3="/i_proyectos" text3='Proyectos' icon3='fa-solid fa-seedling'
+		enlace4='/i_ambiente' text4='Ambientes' icon4='fa-solid fa-helmet-safety'
+		enlace5='' text5='Turismo' icon5='fa-solid fa-umbrella-beach'
+		enlace6='/' text6='Regresar' icon6=""></Nav>
 
         <Modificacion></Modificacion>
 
